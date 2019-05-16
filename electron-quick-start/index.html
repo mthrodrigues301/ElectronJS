@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script>
-      // You can also require other files to run in this process
-      require("./renderer.js");
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <style media="screen">
+    * {
+      cursor: default;
+    }
+
+    body {
+      height: 100%;
+      background-color: red;
+      -webkit-user-select: none;
+      font: caption;
+    }
+
+    select {
+      -webkit-app-region: np-drag;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  <select class="" name="">
+    <option value="option">Option One</option>
+    <option value="option">Option Two</option>
+    <option value="option">Option Three</option>
+  </select>
+  <script>
+    // You can also require other files to run in this process
+    require("./renderer.js");
+  </script>
+</body>
+
 </html>
