@@ -1,0 +1,10 @@
+[
+    { 
+        "time": 2,
+        "file": "midia/images/teste.jpg"
+    },
+    { 
+        "time": 10,
+        "file": "midia/videos/trailer.mp4"
+    }
+]
