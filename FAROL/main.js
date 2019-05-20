@@ -2,7 +2,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const timeline = require('./timeline.json')
 var timeOrder = timeline.sort(function (a, b) { return a.ShowOrder - b.ShowOrder })
-console.log(timeOrder)
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -19,7 +18,7 @@ function createWindow() {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('view.html')
+  mainWindow.loadFile('index.html')
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
