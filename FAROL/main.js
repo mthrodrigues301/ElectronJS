@@ -1,11 +1,13 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
-
+const { app, BrowserWindow, ipcMain } = require('electron')
+const timeline = require('./timeline.json')
+var timeOrder = timeline.sort(function (a, b) { return a.ShowOrder - b.ShowOrder })
+console.log(timeOrder)
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     fullscreen: true,
@@ -17,7 +19,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('teste.html')
+  mainWindow.loadFile('view.html')
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
@@ -30,6 +32,10 @@ function createWindow () {
     mainWindow = null
   })
 }
+
+ipcMain.on('list_files', (event, arg) => {
+  event.sender.send('list_files_reply', timeOrder)
+})
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

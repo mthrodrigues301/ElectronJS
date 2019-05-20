@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('../ttf/Raleway/Raleway-Light.woff2') format('woff2'),
+        url('../ttf/Raleway/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Black';
+    src: url('../ttf/Raleway/Raleway-Black.woff2') format('woff2'),
+        url('../ttf/Raleway/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}

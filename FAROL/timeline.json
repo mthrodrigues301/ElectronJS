@@ -1,10 +1,35 @@
 [
-    { 
-        "time": 2,
-        "file": "midia/images/teste.jpg"
-    },
-    { 
-        "time": 10,
-        "file": "midia/videos/trailer.mp4"
-    }
+  {
+    "time": 4,
+    "file": "midia/video/f09f24ca-498c-43ac-a70e-5418a3252fbb.mp4",
+    "ShowOrder": 2,
+    "TemplateId": 0,
+    "ContentTemplateId": null,
+    "CompanyUnitRepositoryId": null,
+    "TestTemplateId": null,
+    "TemplatesCompaniesId": null,
+    "PlayerId": 1203
+  },
+  {
+    "time": 3,
+    "file": "midia/images/c0c28a84-3100-454e-b7a1-d8827a1214ab.jpg",
+    "ShowOrder": 3,
+    "TemplateId": 0,
+    "ContentTemplateId": null,
+    "CompanyUnitRepositoryId": null,
+    "TestTemplateId": null,
+    "TemplatesCompaniesId": null,
+    "PlayerId": 1203
+  },
+  {
+    "time": 10,
+    "file": "midia/teste/campeonato.brasileiro_a.html",
+    "ShowOrder": 1,
+    "TemplateId": 0,
+    "ContentTemplateId": null,
+    "CompanyUnitRepositoryId": null,
+    "TestTemplateId": null,
+    "TemplatesCompaniesId": null,
+    "PlayerId": 1203
+  }
 ]
